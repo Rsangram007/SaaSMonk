@@ -24,6 +24,10 @@ app.use((req, res, next) => {
     next();
 });
 
+app.get('/',(req,res)=>{
+    res.send('Backend Server')
+})
+
 // Routes
 const movieRouter = require('./routes/movieRoutes');
 const reviewRouter = require('./routes/reviewRoutes');
